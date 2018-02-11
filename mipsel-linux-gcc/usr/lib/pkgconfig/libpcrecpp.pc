@@ -1,0 +1,12 @@
+# Package Information for pkg-config
+
+prefix=/home/steward/Downloads/buildroot-2017.02.9/output/host/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpcrecpp
+Description: PCRECPP - C++ wrapper for PCRE
+Version: 8.41
+Libs: -L${libdir} -lpcre -lpcrecpp
+Cflags: -I${includedir} 

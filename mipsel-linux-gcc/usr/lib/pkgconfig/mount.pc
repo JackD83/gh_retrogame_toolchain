@@ -1,0 +1,11 @@
+prefix=/home/steward/Downloads/buildroot-2017.02.9/output/host/usr
+exec_prefix=/home/steward/Downloads/buildroot-2017.02.9/output/host/usr
+libdir=/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/lib
+includedir=/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/include
+
+Name: mount
+Description: mount library
+Version: 2.29.2
+Requires.private: blkid
+Cflags: -I${includedir}/libmount
+Libs: -L${libdir} -lmount
